@@ -5,7 +5,8 @@ Welcome to Django Login
 Hello {{ name }} |
 Please confirm your email by clicking on the following link.
 
-Confirmation Link: http://{{ domain }}{%url 'activate' uid64=uid token=token %}
+Confirmation Link: http://{{ domain }}
+path('activate/<uidb64>/<token>/', ...)
 
 
 {% endautoescape %}}
