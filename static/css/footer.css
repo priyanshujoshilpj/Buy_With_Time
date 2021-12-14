@@ -47,8 +47,8 @@ p{
 }
 .ft-logo{
     position: relative;
-    top: -30px;
-    left: 50px;
+    left: -60px;
+    top: -120px;
 }
 input[type="email2"] {
     
@@ -56,7 +56,7 @@ input[type="email2"] {
     
 }
 input[type="submit"] {
-    background-color: blue;
+    background-color: #011570;
     color: #fff;
     cursor: pointer;
     border: 0;
@@ -79,13 +79,13 @@ input[type="submit"] {
     padding: 10px 10px;
 }
 .fab{
-    color: blue;
+    color: #011570;
 }
 .fab:hover{
     color: white;
 }
 .ft-legal{
-    background-color: blue;
+    background-color: #011570;
     padding: 10px;
 }
 .ft-legal-list{

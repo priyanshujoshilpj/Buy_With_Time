@@ -83,7 +83,7 @@ body{
 }
 
 i{
-    color: blue;
+    color: #011570;
     position: relative;
     top: -72px;
     left: 7px;
@@ -97,7 +97,7 @@ button{
     border-radius: 10px;
     height: 50px;
     color: white;
-    background:linear-gradient(to right,blue,#565ef5);
+    background:linear-gradient(to right,#011570,#565ef5);
     cursor: pointer;
 }
 

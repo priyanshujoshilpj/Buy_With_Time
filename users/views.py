@@ -56,3 +56,9 @@ def signout(request):
     logout(request)
     messages.success(request, "Logged Out Succefully!")
     return redirect ('home')
+
+def aboutus(request):
+    return render(request, "users/aboutus.html")
+
+def contactus(request):
+    return render(request, "users/contactus.html")
