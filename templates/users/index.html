@@ -1,35 +1,247 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>home</title>
-    <link rel="stylesheet" href="">
+    <title>Home</title>
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
   </head>
-  <body>
+  <style>
+    .slideshow {
+    list-style-type: none;
+    margin-bottom: 300px;
+  }
+  
+  /** SLIDESHOW **/
+  .slideshow,
+  .slideshow:after { 
+      
+      width: 100%;
+      height: 500px;
+      z-index: 0; 
+  }
+  
+  .slideshow li span { 
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0px;
+      left: 0px;
+      color: transparent;
+      background-size: cover;
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      opacity: 0;
+      z-index: 0;
+      animation: imageAnimation 30s linear infinite 0s; 
+  }
+  
+  
+  
+  .slideshow li:nth-child(1) span { 
+      background-image: url('{% static "img/sld1.jpg" %}'); 
+  }
+  .slideshow li:nth-child(2) span { 
+      background-image: url('{% static "img/sld2.jpg" %}');
+      animation-delay: 6s; 
+  }
+  .slideshow li:nth-child(3) span { 
+      background-image: url('{% static "img/sld3.jpg" %}');
+      animation-delay: 12s; 
+  }
+  .slideshow li:nth-child(4) span { 
+      background-image: url('{% static "img/sld4.jpg" %}');   
+      animation-delay: 18s; 
+  }
+  .slideshow li:nth-child(5) span { 
+      background-image: url('{% static "img/sld5.jpg" %}');
+      animation-delay: 24s; 
+  }
+  
+  
+  
+  @keyframes imageAnimation { 
+      0% { opacity: 0; animation-timing-function: ease-in; }
+      8% { opacity: 1; animation-timing-function: ease-out; }
+      17% { opacity: 1 }
+      25% { opacity: 0 }
+      100% { opacity: 0 }
+  }
+  
+  
+  @keyframes titleAnimation { 
+      0% { opacity: 0 }
+      8% { opacity: 1 }
+      17% { opacity: 1 }
+      19% { opacity: 0 }
+      100% { opacity: 0 }
+  }
+  
+  
+  .no-cssanimations .cb-slideshow li span {
+      opacity: 1;
+  }
+  .contain{
+   width: 100%;
+   background-image: url('{% static "img/time.jpg" %}') ;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-attachment: fixed;
+   height: 300px;
+  
+
+ }
+ .container-text{
+   width: 100%;
+   color: black;
+   font-size: 40px;
+   text-align: center;
+   padding: 100px;
+   font-weight: 600;
+   
+  }
+  .container-text:hover{
+    font-size: 50px;
+    font-weight: bold;
+  }
+  .testimonial{
+    margin-bottom: -270px !important;
+  }
+  </style>
+
+<body>
     {% include 'navbar.html'%}
-    {% for message in messages %}
+
     
-    <div class="alert alert-{{message.tags}} alert.dismissible fade show" role="alert">
-    <strong>Message: </strong> {{message}}
-    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-    <span aria-hidden="true">&times;</span>
-    </button>
+    <ul class="slideshow">
+      <li><span></span></li>
+      <li><span>2</span></li>
+      <li><span></span></li>
+      <li><span></span></li>
+      <li><span></span></li>
+    </ul>
+
+    <div class="contain">
+      <div class="container-text">
+        " Time is money. Wasted time means wasted money means trouble. "
+      </div>
     </div>
-    {% endfor %}
-    
-	<h3>Welcome to our app(Buy With Time!)</h3>
 
-    {% if user.is_authenticated %}
-    <h3>Hello {{fname}} </h3>
-    <h4>You're succeffully logged in.</h4>
-    <button type="submit"><a href="/signout">SignOut</a></button>
+    <!-- about  -->
+<div id="about" class="about">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+        <div class="about-box">
+          <h2>About us</h2>
+          <p>Great thinkers have a spectacular time to be more valuable currency than money. With this objective we have designed an online networking platform, Buy With Time !, which allows customers to pay for goods with their time. The coins will be assigned to the customers according to how much time they have spent traveling to the stores which are a bit outside the city areas. The travel timeline and the directions followed for arriving at the stores are traced out by Google Maps.</p>
+          <a href="/aboutus">Read more</a>
+        </div>
+      </div>
+      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 padding_rl">
+        <div class="about-box_img">
+          <figure><img src='{% static "img/about.jpg" %}' alt="#" /></figure>
+        </div>
+      </div>
+    </div>
 
-    {% else %}
-    <button type="submit"><a href="/signup">SignUp</a></button>
-    <button type="submit"><a href="/signin">SignIn</a></button>
-    {% endif %}
+  </div>
+</div>
+<!-- end abouts -->
+
+<br><br>
+<div class="contain">
+  <div class="container-text">
+    How The Process Works ?
+  </div>
+</div>
+
+
+<div class="steps">
+  <ul class="tilesWrap">
+    <li>
+      <h2>01</h2>
+      <h3>Open Google Maps</h3>
+      <p>
+        User will open google maps and will start navigating to our store from his live location.
+      </p>
+      <button>Read more</button>
+    </li>
+    <li>
+      <h2>02</h2>
+      <h3>Calculate The Distance</h3>
+      <p>
+        Once the user reaches the store he has to show the distance calculated by google maps to the cashier.
+      </p>
+      <button>Read more</button>
+    </li>
+    <li>
+      <h2>03</h2>
+      <h3>Calculate Coins</h3>
+      <p>
+        Now the user will be assigned coins corresponding to the distance travelled according to the rule :
+        1 coin = 100 metre
+      </p>
+      <button>Read more</button>
+    </li>
+    <li>
+      <h2>04</h2>
+      <h3>Purchase the Products</h3>
+      <p>
+        Now the user can purchase the products and Every product would have specific coins assigned as well as an MRP price. Customers can also buy products by paying half by coins gained and another part by cash.
+      </p>
+      <button>Read more</button>
+    </li>
+  </ul>
+
+</div>
+
+
+
+<section class="testimonial text-center">
+  <div class="container">
+
+      <div class="heading white-heading">
+          Testimonial
+      </div>
+      <div id="testimonial4" class="carousel slide testimonial4_indicators testimonial4_control_button thumb_scroll_x swipe_x" data-ride="carousel" data-pause="hover" data-interval="5000" data-duration="2000">
+       
+          <div class="carousel-inner" role="listbox">
+              <div class="carousel-item active">
+                  <div class="testimonial4_slide">
+                      <img src="https://i.ibb.co/8x9xK4H/team.jpg" class="img-circle img-responsive" />
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                      <h4>Client 1</h4>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                  <div class="testimonial4_slide">
+                      <img src="https://i.ibb.co/8x9xK4H/team.jpg" class="img-circle img-responsive" /><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                      <h4>Client 2</h4>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                  <div class="testimonial4_slide">
+                      <img src="https://i.ibb.co/8x9xK4H/team.jpg" class="img-circle img-responsive" />
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                      <h4>Client 3</h4>
+                  </div>
+              </div>
+          </div>
+          <a class="carousel-control-prev" href="#testimonial4" data-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+          </a>
+          <a class="carousel-control-next" href="#testimonial4" data-slide="next">
+              <span class="carousel-control-next-icon"></span>
+          </a>
+      </div>
+  </div>
+</section>
+
+
     {% include 'footer.html' %}
+
   </body>
 </html>
