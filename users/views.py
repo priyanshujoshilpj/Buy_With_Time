@@ -4,6 +4,7 @@ from django.http import HttpResponse
 from django.contrib.auth.models import User
 from django.contrib import messages
 from django.contrib.auth import authenticate, login, logout
+from .models import UserModel
 
 # Create your views here.
 def home(request):
@@ -23,8 +24,10 @@ def signup(request):
         myuser = User.objects.create_user(username, email, pass1)
         myuser.first_name = fname
         myuser.last_name = lname
+        user_ins = UserModel(fname=fname,lname=lname,email=email,pass1=pass1)
 
         myuser.save()
+        user_ins.save()
 
         messages.success(request, "Your Account has been successfully created.")
 
