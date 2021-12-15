@@ -6,3 +6,6 @@ class UserModel(models.Model):
     lname = models.CharField(max_length=30)
     email = models.EmailField()
     pass1=models.CharField(max_length=20)
+
+    def __str__(self):
+        return self.fname+' '+self.lname
