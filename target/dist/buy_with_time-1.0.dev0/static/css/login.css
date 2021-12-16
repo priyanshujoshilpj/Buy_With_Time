@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif ;
+    font-weight: 300;
+}
+body{
+    background-color: black;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+    width: 100%;
+    height: max-content;
+    
+}
+
+.logo{
+    padding-top: 0 ;
+    
+}
+
+.card{
+    background-color: white;
+    height: 420px;
+    width: 400px;
+    padding: 50px;
+    border-radius: 20px;
+    margin-bottom: 100px;
+    box-shadow:
+    0 36.4px 28.9px -28px rgba(0, 0, 0, 0.25),
+    0 51.2px 57.3px -28px rgba(0, 0, 0, 0.265),
+    0 59.5px 84.3px -28px rgba(0, 0, 0, 0.273),
+    0 64.5px 107.9px -28px rgba(0, 0, 0, 0.274),
+    0 67.9px 127.6px -28px rgba(0, 0, 0, 0.266),
+    0 70.7px 144.7px -28px rgba(0, 0, 0, 0.248),
+    0 74.7px 160.6px -28px rgba(0, 0, 0, 0.215),
+    0 86px 176px -28px rgba(0, 0, 0, 0.156);
+
+}
+
+form h1{
+    text-align: center;
+    padding-bottom: 50px;
+}
+label{
+    padding-left: 5px;
+    font-size: 20px;
+    text-align: left;
+}
+
+.pass{
+    position: relative;
+    left: -45px;
+}
+.input-user ,
+.input-password {
+    width: 80%;
+    height: 50px;
+    border: 1px solid #aaa;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    margin-top: 5px;
+    font-size: 20px;
+    text-align: left;
+    padding-left: 40px;
+}
+.input-user:focus ,
+.input-password:focus{
+    outline: 0;
+    border: 2px solid #302b70;
+}
+.register-here{
+    text-align: center;
+    margin-top: 25px;
+}
+
+.register-link{
+    color: #302b70;
+}
+
+i{
+    position: relative;
+    top: -70px;
+    color: #011570;
+}
+
+.submit-btn{
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+    border: 1px solid #aaa;
+    border-radius: 10px;
+    height: 50px;
+    color: white;
+    background:linear-gradient(to right,#011570,#565ef5);
+    cursor: pointer;
+    
+}
+.submit-btn:focus{
+    outline: 0;
+    
+}
+.msg{
+    color: red;
+    position: relative;
+    top: -130px;
+    left: 80px;
+}
+

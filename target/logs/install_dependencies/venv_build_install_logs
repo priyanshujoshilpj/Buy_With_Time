@@ -1,0 +1,108 @@
+Collecting django
+  Using cached Django-4.0-py3-none-any.whl (8.0 MB)
+Collecting tzdata
+  Using cached tzdata-2021.5-py2.py3-none-any.whl (339 kB)
+Collecting asgiref<4,>=3.4.1
+  Using cached asgiref-3.4.1-py3-none-any.whl (25 kB)
+Collecting sqlparse>=0.2.2
+  Using cached sqlparse-0.4.2-py3-none-any.whl (42 kB)
+Installing collected packages: tzdata, sqlparse, asgiref, django
+Successfully installed asgiref-3.4.1 django-4.0 sqlparse-0.4.2 tzdata-2021.5
+WARNING: You are using pip version 21.2.4; however, version 21.3.1 is available.
+You should consider upgrading via the 'c:\users\joshi\desktop\buy_with_time\target\venv\build\cpython-3.10.0.final.0\scripts\python.exe -m pip install --upgrade pip' command.
+ERROR: Invalid requirement: 'django,4.0'
+WARNING: You are using pip version 21.2.4; however, version 21.3.1 is available.
+You should consider upgrading via the 'c:\users\joshi\desktop\buy_with_time\target\venv\build\cpython-3.10.0.final.0\scripts\python.exe -m pip install --upgrade pip' command.
+ERROR: Invalid requirement: 'django, ==4.0'
+WARNING: You are using pip version 21.2.4; however, version 21.3.1 is available.
+You should consider upgrading via the 'c:\users\joshi\desktop\buy_with_time\target\venv\build\cpython-3.10.0.final.0\scripts\python.exe -m pip install --upgrade pip' command.
+ERROR: Invalid requirement: 'django, ==4.0'
+WARNING: You are using pip version 21.2.4; however, version 21.3.1 is available.
+You should consider upgrading via the 'c:\users\joshi\desktop\buy_with_time\target\venv\build\cpython-3.10.0.final.0\scripts\python.exe -m pip install --upgrade pip' command.
+ERROR: Invalid requirement: 'django, ==2.2.14'
+WARNING: You are using pip version 21.2.4; however, version 21.3.1 is available.
+You should consider upgrading via the 'c:\users\joshi\desktop\buy_with_time\target\venv\build\cpython-3.10.0.final.0\scripts\python.exe -m pip install --upgrade pip' command.
+ERROR: Invalid requirement: 'django, ==2.2.14'
+WARNING: You are using pip version 21.2.4; however, version 21.3.1 is available.
+You should consider upgrading via the 'c:\users\joshi\desktop\buy_with_time\target\venv\build\cpython-3.10.0.final.0\scripts\python.exe -m pip install --upgrade pip' command.
+Requirement already satisfied: Django==4.0 in c:\users\joshi\desktop\buy_with_time\target\venv\build\cpython-3.10.0.final.0\lib\site-packages (from -r requirement.txt (line 1)) (4.0)
+Requirement already satisfied: tzdata in c:\users\joshi\desktop\buy_with_time\target\venv\build\cpython-3.10.0.final.0\lib\site-packages (from Django==4.0->-r requirement.txt (line 1)) (2021.5)
+Requirement already satisfied: sqlparse>=0.2.2 in c:\users\joshi\desktop\buy_with_time\target\venv\build\cpython-3.10.0.final.0\lib\site-packages (from Django==4.0->-r requirement.txt (line 1)) (0.4.2)
+Requirement already satisfied: asgiref<4,>=3.4.1 in c:\users\joshi\desktop\buy_with_time\target\venv\build\cpython-3.10.0.final.0\lib\site-packages (from Django==4.0->-r requirement.txt (line 1)) (3.4.1)
+WARNING: You are using pip version 21.2.4; however, version 21.3.1 is available.
+You should consider upgrading via the 'c:\users\joshi\desktop\buy_with_time\target\venv\build\cpython-3.10.0.final.0\scripts\python.exe -m pip install --upgrade pip' command.
+Requirement already satisfied: asgiref==3.4.1 in c:\users\joshi\desktop\buy_with_time\target\venv\build\cpython-3.10.0.final.0\lib\site-packages (from -r requirements.txt (line 1)) (3.4.1)
+Collecting attrs==21.2.0
+  Using cached attrs-21.2.0-py2.py3-none-any.whl (53 kB)
+Collecting backports.entry-points-selectable==1.1.1
+  Using cached backports.entry_points_selectable-1.1.1-py2.py3-none-any.whl (6.2 kB)
+Collecting distlib==0.3.4
+  Using cached distlib-0.3.4-py2.py3-none-any.whl (461 kB)
+Requirement already satisfied: Django==4.0 in c:\users\joshi\desktop\buy_with_time\target\venv\build\cpython-3.10.0.final.0\lib\site-packages (from -r requirements.txt (line 5)) (4.0)
+Collecting filelock==3.4.0
+  Using cached filelock-3.4.0-py3-none-any.whl (9.8 kB)
+Collecting jupyter-core==4.9.1
+  Using cached jupyter_core-4.9.1-py3-none-any.whl (86 kB)
+Collecting nest-asyncio==1.5.4
+  Using cached nest_asyncio-1.5.4-py3-none-any.whl (5.1 kB)
+Collecting parso==0.8.3
+  Using cached parso-0.8.3-py2.py3-none-any.whl (100 kB)
+Collecting platformdirs==2.4.0
+  Using cached platformdirs-2.4.0-py3-none-any.whl (14 kB)
+Collecting pybuilder==0.13.3
+  Using cached pybuilder-0.13.3-py3-none-any.whl (6.6 MB)
+Collecting pyparsing==3.0.6
+  Using cached pyparsing-3.0.6-py3-none-any.whl (97 kB)
+Collecting pyrsistent==0.18.0
+  Using cached pyrsistent-0.18.0-cp310-cp310-win_amd64.whl
+Collecting python-dateutil==2.8.2
+  Using cached python_dateutil-2.8.2-py2.py3-none-any.whl (247 kB)
+Collecting pywin32==302
+  Using cached pywin32-302-cp310-cp310-win_amd64.whl (9.2 MB)
+Collecting pyzmq==22.3.0
+  Using cached pyzmq-22.3.0-cp310-cp310-win_amd64.whl (1.1 MB)
+Collecting six==1.16.0
+  Using cached six-1.16.0-py2.py3-none-any.whl (11 kB)
+Requirement already satisfied: sqlparse==0.4.2 in c:\users\joshi\desktop\buy_with_time\target\venv\build\cpython-3.10.0.final.0\lib\site-packages (from -r requirements.txt (line 18)) (0.4.2)
+Collecting tornado==6.1
+  Using cached tornado-6.1.tar.gz (497 kB)
+Collecting traitlets==5.1.1
+  Using cached traitlets-5.1.1-py3-none-any.whl (102 kB)
+Requirement already satisfied: tzdata==2021.5 in c:\users\joshi\desktop\buy_with_time\target\venv\build\cpython-3.10.0.final.0\lib\site-packages (from -r requirements.txt (line 21)) (2021.5)
+Collecting virtualenv==20.10.0
+  Using cached virtualenv-20.10.0-py2.py3-none-any.whl (5.6 MB)
+Collecting wcwidth==0.2.5
+  Using cached wcwidth-0.2.5-py2.py3-none-any.whl (30 kB)
+Building wheels for collected packages: tornado
+  Building wheel for tornado (setup.py): started
+  Building wheel for tornado (setup.py): finished with status 'done'
+  Created wheel for tornado: filename=tornado-6.1-cp310-cp310-win_amd64.whl size=419508 sha256=6cc2082d85a66b16bc081c2b5456cebfeeeaffb12984ccaa52db7b147d6b7eaf
+  Stored in directory: c:\users\joshi\appdata\local\pip\cache\wheels\80\32\8d\21cf0fa6ee4e083f6530e5b83dfdfa9489a3890d320803f4c7
+Successfully built tornado
+Installing collected packages: traitlets, six, pywin32, platformdirs, filelock, distlib, backports.entry-points-selectable, wcwidth, virtualenv, tornado, pyzmq, python-dateutil, pyrsistent, pyparsing, pybuilder, parso, nest-asyncio, jupyter-core, attrs
+Successfully installed attrs-21.2.0 backports.entry-points-selectable-1.1.1 distlib-0.3.4 filelock-3.4.0 jupyter-core-4.9.1 nest-asyncio-1.5.4 parso-0.8.3 platformdirs-2.4.0 pybuilder-0.13.3 pyparsing-3.0.6 pyrsistent-0.18.0 python-dateutil-2.8.2 pywin32-302 pyzmq-22.3.0 six-1.16.0 tornado-6.1 traitlets-5.1.1 virtualenv-20.10.0 wcwidth-0.2.5
+WARNING: You are using pip version 21.2.4; however, version 21.3.1 is available.
+You should consider upgrading via the 'c:\users\joshi\desktop\buy_with_time\target\venv\build\cpython-3.10.0.final.0\scripts\python.exe -m pip install --upgrade pip' command.
+ERROR: Could not find a version that satisfies the requirement src.main.python.users.models (from versions: none)
+ERROR: No matching distribution found for src.main.python.users.models
+WARNING: You are using pip version 21.2.4; however, version 21.3.1 is available.
+You should consider upgrading via the 'c:\users\joshi\desktop\buy_with_time\target\venv\build\cpython-3.10.0.final.0\scripts\python.exe -m pip install --upgrade pip' command.
+Collecting django.test
+  Downloading django-test-0.4030.tar.gz (14 kB)
+Building wheels for collected packages: django.test
+  Building wheel for django.test (setup.py): started
+  Building wheel for django.test (setup.py): finished with status 'done'
+  Created wheel for django.test: filename=django_test-0.4030-py3-none-any.whl size=20071 sha256=f0ba9cfe6cd74d90f3583f7e27da3f8c47bf83afd02eca599d4e2879994be385
+  Stored in directory: c:\users\joshi\appdata\local\pip\cache\wheels\13\b9\0e\16139f5b6972a8f955c9b00a25195d56bf4a7a9644d5222f70
+Successfully built django.test
+Installing collected packages: django.test
+Successfully installed django.test-0.4030
+WARNING: You are using pip version 21.2.4; however, version 21.3.1 is available.
+You should consider upgrading via the 'c:\users\joshi\desktop\buy_with_time\target\venv\build\cpython-3.10.0.final.0\scripts\python.exe -m pip install --upgrade pip' command.
+Requirement already satisfied: django.test in c:\users\joshi\desktop\buy_with_time\target\venv\build\cpython-3.10.0.final.0\lib\site-packages (0.4030)
+WARNING: You are using pip version 21.2.4; however, version 21.3.1 is available.
+You should consider upgrading via the 'c:\users\joshi\desktop\buy_with_time\target\venv\build\cpython-3.10.0.final.0\scripts\python.exe -m pip install --upgrade pip' command.
+ERROR: Could not find a version that satisfies the requirement coverage_break_build (from versions: none)
+ERROR: No matching distribution found for coverage_break_build
+WARNING: You are using pip version 21.2.4; however, version 21.3.1 is available.
+You should consider upgrading via the 'c:\users\joshi\desktop\buy_with_time\target\venv\build\cpython-3.10.0.final.0\scripts\python.exe -m pip install --upgrade pip' command.

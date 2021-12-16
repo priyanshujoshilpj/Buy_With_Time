@@ -1,0 +1,49 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+    <link rel="stylesheet" href="{% static 'css/login.css' %}">
+    <link rel="stylesheet" href= "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+  </head>
+
+{% block content %}
+
+<body>
+    
+
+  <div class="container">
+      <img src="/static/img/Logo.png" class="logo" alt="logo" width="200px" height="200px">
+      <div class="card">
+          <form action="/signin" method="POST">
+              {% csrf_token %}
+              <h1>Log in to your account</h1>
+
+              <label for="username" class="label user">Username</label><br>
+              <input type="text" id="username" name="username" placeholder="Username" class="input-user" required>
+              <i class="fa fa-user fa-2x fa-fw"></i>
+
+              <label for="password" class="label pass">Password</label><br>
+              <input type="password" id="pass1" name="pass1" placeholder="Password" class="input-password" required>
+              <i class="fa fa-lock fa-2x fa-fw"></i>
+
+              <input type="submit" value="Log In" class="submit-btn">
+          </form>
+          <div class="register-here">
+              <p style="color: black;">Don't have an account? <a href="/signup" target="blank" style="text-decoration: none;"><strong class="register-link"> Register Here!</strong></a></p>
+          </div>
+          <br>
+
+      
+  
+      </div>
+  </div>
+  
+{% include 'footer.html' %}
+
+</body>
+{% endblock %}
+</html>
