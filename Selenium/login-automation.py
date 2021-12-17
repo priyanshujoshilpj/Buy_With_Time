@@ -1,4 +1,6 @@
 from selenium import webdriver
+from selenium.webdriver.common.keys import Keys
+import time
 # from selenium.webdriver.common.keys import Keys
 
 # driver = webdriver.Chrome("C:\Users\joshi\Downloads\chromedriver_win32")
@@ -24,4 +26,13 @@ password_input.send_keys(PASSWORD)
 login_button = driver.find_element_by_id('btn-login')
 login_button.click()
 
+#Scroll Functionality
+
+time.sleep(2)
+
+element = driver.find_element_by_tag_name('body')
+
+while True:
+    element.send_keys(Keys.PAGE_DOWN)
+    time.sleep(2)
 
