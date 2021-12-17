@@ -13,6 +13,8 @@ import time
 
 USERNAME= 'yashas'
 PASSWORD= '1234@abcd'
+EMAIL= 'yashas@gmail.com'
+MESSAGE= 'Hello'
 
 driver = webdriver.Chrome('chromedriver.exe')
 driver.get('http://127.0.0.1:8000/signin')
@@ -28,11 +30,43 @@ login_button.click()
 
 #Scroll Functionality
 
-time.sleep(2)
+time.sleep(4)
 
 element = driver.find_element_by_tag_name('body')
 
 while True:
-    element.send_keys(Keys.PAGE_DOWN)
-    time.sleep(2)
+    element.send_keys(Keys.END)
+    time.sleep(4)
+    break
+
+
+driver.get('http://127.0.0.1:8000/aboutus')
+
+time.sleep(4)
+element = driver.find_element_by_tag_name('body')
+
+while True:
+    element.send_keys(Keys.END)
+    time.sleep(4)
+    break
+
+driver.get('http://127.0.0.1:8000/contactus')
+user_input = driver.find_element_by_id('contact-name')
+user_input.send_keys(USERNAME)
+
+password_input = driver.find_element_by_id('contact-email')
+password_input.send_keys(EMAIL)
+
+password_input = driver.find_element_by_id('contact-message')
+password_input.send_keys(MESSAGE)
+
+login_button = driver.find_element_by_id('btn-contact')
+login_button.click()
+
+time.sleep(5)
+driver.close()
+
+
+
+
 
