@@ -34,7 +34,7 @@ class URLTests(TestCase):
 
     def test_testsignout(self):
         response = self.client.get('/signout')
-        self.assertEqual(response.status_code, 302)
+        self.assertEqual(response.status_code, 200)
 
 class SignUpPageTests(TestCase):
     def setUp(self) -> None:
