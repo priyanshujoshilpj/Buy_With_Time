@@ -20,29 +20,34 @@ job:
     runs-on: ubuntu-latest
 
     steps:
-      -uses: actions/checkout@v2
-      -name: Set up python 3.10.0
-       uses: actions/setup-python@v2
-       with:
-        python-version: 3.10.0
-      -name: Install dependencies
-       run: |
+    - uses: actions/checkout@v2
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v2
+      with:
+        python-version: ${{ matrix.python-version }}
+    - name: Install Dependencies
+      run: |
         python -m pip install --upgrade pip
         pip install -r requirements.txt
-      
-      -name: Lint with flake8
-       run: |
-        pip install flake8
-        flake8
-      -name: Coverage report
-       run: |
-        pip install coverage
+    - name: Run migrations
+      run: |
+        cd Buy_With_Time
+        python manage.py makemigrations
+        python manage.py migrate
+    - name: Run Tests
+      run: |
+        cd Buy_With_Time
         coverage run manage.py test
         coverage report
-
-      -name: Django Testing
-       run: |
-       python manage.py test
-      
-
-
+    - name: Send mail
+      if: ${{ failure() }}
+      uses: dawidd6/action-send-mail@v3
+      with:
+        server_address: smtp.gmail.com
+        server_port: 465
+        username: ${{ secrets.EMAIL_USERNAME }}
+        password: ${{ secrets.EMAIL_PASSWORD }}
+        subject: BUILD FAILED by ${{ github.actor }}
+        body: ${{ github.job }} job in workflow ${{ github.workflow }} of ${{ github.repository }} has ${{ job.status }} by ${{ github.actor }} !!!
+        to: priyanshu.joshi18@st.niituniversity.in, aaditya.gupta18@st.niituniversity.in, yashas.grover18@st.niituniversity.in, ali.khan18@st.niituniversity.in, shefali.18@st.niituniversity.in
+        from: Capstone Project
