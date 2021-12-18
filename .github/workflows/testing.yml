@@ -29,12 +29,10 @@ jobs:
         pip install django
     - name: Run migrations
       run: |
-        cd Buy_With_Time
         python manage.py makemigrations
         python manage.py migrate
     - name: Run Tests
       run: |
-        cd Buy_With_Time
         coverage run manage.py test
         coverage report
     - name: Send mail
