@@ -14,7 +14,7 @@ on:
 
 
 
-job:
+jobs:
   build:
     
     runs-on: ubuntu-latest
