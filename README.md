@@ -17,36 +17,36 @@ Many customers spend a significant chunk of time visiting the stores which are s
 
 ### Landing Page
 
-![Landing](images\landing.jpeg)
+![Landing](https://drive.google.com/file/d/1ma-8XQb-9wjCIRKfZrsFXK_Qd1oLu5B-/view?usp=sharing)
 
 ### Login/SignUp
 
 The user needs to register themselves.
-![SignUp](images\signup.jpeg)
+![SignUp](https://drive.google.com/file/d/1-R48PSNzX9slq5BMfxfuez0-hhLIFUr1/view?usp=sharing)
 
 The user needs to enter their Login credentials.
-![Login](images\login.jpeg)
+![Login](https://drive.google.com/file/d/1suT5SEm-v8V6Ig4AG7B1A535D__q9g2i/view?usp=sharing)
 
 ### Home Page
 
 Once you Login, you will be able to access the Explore Tab. 
-![HomePage](images\home.jpeg)
+![HomePage](https://drive.google.com/file/d/1mk3uyMVhP_UgGuOeUtemWHQahwkZV8w5/view?usp=sharing)
 
 This is our Testimonial part.
-![Testimonial](images\testimonial.jpeg)
+![Testimonial](https://drive.google.com/file/d/12EX9SJ0XiR_9KieJ0rmatPed5bRzhLH7/view?usp=sharing)
 
 ### About Us
 
-![AboutUs](images\aboutus.jpeg)
+![AboutUs](https://drive.google.com/file/d/1FsILlei-5-VSXfqb4H2bTYF3OHpg6pU9/view?usp=sharing)
 
 ### Explore
 
 In our app the user will have to enter his/her own location as well as the destination and then based on that information we will convert the data into tokens which the user will use for purchasing on the store. While operating the app the user will be shown the price of an object in two variables namely: INR and BWT tokens (upto a certain limit). The user/customer will be able to redeem only a certain amount of tokens on each visit.
-![Explore]{images\explore.jpeg}
+![Explore](https://drive.google.com/file/d/1-ZYhpO4_zHQx4dRuJiw8DXWlGEY6mbRE/view?usp=sharing)
 
 ### Contact Us
 
-![ContactUs](images\contact.jpeg)
+![ContactUs](https://drive.google.com/file/d/1Q2-bD92-cYsjQwELAbq7JTB691yfQjFA/view?usp=sharing)
 
 ## How to Run the Application on the Local Machine
  
