@@ -30,7 +30,7 @@ The user needs to enter their Login credentials.
 ### Home Page
 
 Once you Login, you will be able to access the Explore Tab. 
-![HomePage](https://drive.google.com/file/d/1mk3uyMVhP_UgGuOeUtemWHQahwkZV8w5/view?usp=sharing)
+![HomePage](https://github.com/priyanshujoshilpj/Buy_With_Time/blob/main/images/home.jpeg)
 
 This is our Testimonial part.
 ![Testimonial](https://drive.google.com/file/d/12EX9SJ0XiR_9KieJ0rmatPed5bRzhLH7/view?usp=sharing)
@@ -42,11 +42,11 @@ This is our Testimonial part.
 ### Explore
 
 In our app the user will have to enter his/her own location as well as the destination and then based on that information we will convert the data into tokens which the user will use for purchasing on the store. While operating the app the user will be shown the price of an object in two variables namely: INR and BWT tokens (upto a certain limit). The user/customer will be able to redeem only a certain amount of tokens on each visit.
-![Explore](https://drive.google.com/file/d/1-ZYhpO4_zHQx4dRuJiw8DXWlGEY6mbRE/view?usp=sharing)
+![Explore](https://github.com/priyanshujoshilpj/Buy_With_Time/blob/main/images/explore.jpeg)
 
 ### Contact Us
 
-![ContactUs](https://drive.google.com/file/d/1Q2-bD92-cYsjQwELAbq7JTB691yfQjFA/view?usp=sharing)
+![ContactUs](https://github.com/priyanshujoshilpj/Buy_With_Time/blob/main/images/contact.jpeg)
 
 ## How to Run the Application on the Local Machine
  
