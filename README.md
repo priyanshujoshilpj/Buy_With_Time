@@ -17,15 +17,15 @@ Many customers spend a significant chunk of time visiting the stores which are s
 
 ### Landing Page
 
-![Landing](https://drive.google.com/file/d/1ma-8XQb-9wjCIRKfZrsFXK_Qd1oLu5B-/view?usp=sharing)
+![Landing](https://github.com/priyanshujoshilpj/Buy_With_Time/blob/main/images/landing.jpeg)
 
 ### Login/SignUp
 
 The user needs to register themselves.
-![SignUp](https://drive.google.com/file/d/1-R48PSNzX9slq5BMfxfuez0-hhLIFUr1/view?usp=sharing)
+![SignUp](https://github.com/priyanshujoshilpj/Buy_With_Time/blob/main/images/signup.jpeg)
 
 The user needs to enter their Login credentials.
-![Login](https://drive.google.com/file/d/1suT5SEm-v8V6Ig4AG7B1A535D__q9g2i/view?usp=sharing)
+![Login](https://github.com/priyanshujoshilpj/Buy_With_Time/blob/main/images/login.jpeg)
 
 ### Home Page
 
@@ -33,7 +33,7 @@ Once you Login, you will be able to access the Explore Tab.
 ![HomePage](https://github.com/priyanshujoshilpj/Buy_With_Time/blob/main/images/home.jpeg)
 
 This is our Testimonial part.
-![Testimonial](https://drive.google.com/file/d/12EX9SJ0XiR_9KieJ0rmatPed5bRzhLH7/view?usp=sharing)
+![Testimonial](https://github.com/priyanshujoshilpj/Buy_With_Time/blob/main/images/testimonial.jpeg)
 
 ### About Us
 
