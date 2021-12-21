@@ -37,7 +37,7 @@ This is our Testimonial part.
 
 ### About Us
 
-![AboutUs](https://drive.google.com/file/d/1FsILlei-5-VSXfqb4H2bTYF3OHpg6pU9/view?usp=sharing)
+![AboutUs](https://github.com/priyanshujoshilpj/Buy_With_Time/blob/main/images/aboutus.jpeg)
 
 ### Explore
 
